@@ -59,7 +59,7 @@ addKeyButton.addEventListener('click', () => {
         keys.push({ key: newKey, hwids: hwids });
         keyInput.value = '';
         hwidInputsContainer.innerHTML = '';
-        hwidCountInput.value =         1; // Reseta o contador de HWIDs
+        hwidCountInput.value = 1; // Reseta o contador de HWIDs
         generateHwidInputs(); // Gera um novo campo de HWID
         updateKeyList(); // Atualiza a lista
         showFeedback('Chave adicionada com sucesso!');
@@ -91,9 +91,9 @@ function showFeedback(message) {
 }
 
 async function updateGitHubFile() {
-    const token = 'YOUR_GITHUB_TOKEN'; // Substitua pelo seu token
-    const repoOwner = 'YOUR_GITHUB_USERNAME'; // Substitua pelo seu nome de usuário
-    const repoName = 'YOUR_REPOSITORY_NAME'; // Substitua pelo nome do seu repositório
+    const token = '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'; // Substitua pelo seu token
+    const repoOwner = 'RhChs1090'; // Substitua pelo seu nome de usuário
+    const repoName = 'Keys'; // Substitua pelo nome do seu repositório
     const filePath = 'keys.json'; // Nome do arquivo onde as chaves serão salvas
 
     const response = await fetch(`https://api.github.com/repos/${repoOwner}/${repoName}/contents/${filePath}`, {
