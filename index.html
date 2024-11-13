@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel de Controle de Chaves</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="container">
+        <h1>Painel de Controle de Chaves</h1>
+        <div class="form-group">
+            <label for="keyInput">Nova Chave:</label>
+            <input type="text" id="keyInput" placeholder="Digite a nova chave...">
+        </div>
+        <div class="form-group">
+            <label for="hwidCount">Quantas HWIDs?</label>
+            <input type="number" id="hwidCount" min="1" value="1">
+        </div>
+        <div id="hwidInputs"></div>
+        <button id="addKeyButton">Adicionar Chave</button>
+        <h2>Chaves Atuais:</h2>
+        <ul id="keyList"></ul>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
